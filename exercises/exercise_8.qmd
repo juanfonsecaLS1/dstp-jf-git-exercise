@@ -1,0 +1,8 @@
+## Exercise 8
+This exercise shows a map using tmap.
+
+```{r}
+library(tmap)
+data(World)
+tm_shape(World) + tm_borders()
+```

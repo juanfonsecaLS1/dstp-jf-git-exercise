@@ -1,0 +1,8 @@
+## Exercise 17
+This exercise shows a map with labels using tmap.
+
+```{r}
+library(tmap)
+data(World)
+tm_shape(World) + tm_borders() + tm_text("name")
+```

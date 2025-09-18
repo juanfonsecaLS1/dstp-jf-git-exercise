@@ -1,0 +1,7 @@
+## Exercise 20
+This exercise demonstrates a dot plot using ggplot2.
+
+```{r}
+library(ggplot2)
+ggplot(mtcars, aes(x=mpg)) + geom_dotplot(binwidth=2)
+```

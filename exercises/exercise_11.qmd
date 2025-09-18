@@ -1,0 +1,10 @@
+## Exercise 11
+This exercise shows a map with points using tmap.
+
+```{r}
+library(tmap)
+library(sf)
+data(World)
+World$centroids <- st_centroid(st_geometry(World))
+tm_shape(World) + tm_borders() + tm_dots()
+```

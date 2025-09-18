@@ -1,0 +1,8 @@
+## Exercise 13
+This exercise creates a map with rivers using tmap.
+
+```{r}
+library(tmap)
+data(World)
+tm_shape(World) + tm_borders() + tm_lines()
+```

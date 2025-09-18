@@ -1,0 +1,7 @@
+## Exercise 7
+This exercise demonstrates a violin plot using ggplot2.
+
+```{r}
+library(ggplot2)
+ggplot(iris, aes(x=Species, y=Petal.Length)) + geom_violin()
+```

@@ -1,0 +1,11 @@
+## Exercise 18
+This exercise demonstrates a lollipop chart using ggplot2.
+
+```{r}
+library(ggplot2)
+df <- data.frame(
+  group = c("A", "B", "C"),
+  value = c(10, 20, 30)
+)
+ggplot(df, aes(x=group, y=value)) + geom_segment(aes(x=group, xend=group, y=0, yend=value)) + geom_point(size=4)
+```

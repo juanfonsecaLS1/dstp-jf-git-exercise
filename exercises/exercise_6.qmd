@@ -1,0 +1,7 @@
+## Exercise 6
+This exercise creates a density plot using ggplot2.
+
+```{r}
+library(ggplot2)
+ggplot(iris, aes(x=Sepal.Width, fill=Species)) + geom_density(alpha=0.5)
+```

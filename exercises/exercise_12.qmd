@@ -1,0 +1,7 @@
+## Exercise 12
+This exercise demonstrates a heatmap using ggplot2.
+
+```{r}
+library(ggplot2)
+ggplot(faithfuld, aes(waiting, eruptions, fill = density)) + geom_tile()
+```

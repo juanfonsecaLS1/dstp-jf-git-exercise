@@ -1,0 +1,8 @@
+## Exercise 19
+This exercise creates a map with a legend using tmap.
+
+```{r}
+library(tmap)
+data(World)
+tm_shape(World) + tm_polygons("pop_est", title="Population")
+```

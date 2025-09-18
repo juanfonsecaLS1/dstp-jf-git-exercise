@@ -1,0 +1,11 @@
+## Exercise 16
+This exercise creates a pie chart using ggplot2.
+
+```{r}
+library(ggplot2)
+df <- data.frame(
+  group = c("A", "B", "C"),
+  value = c(10, 20, 30)
+)
+ggplot(df, aes(x="", y=value, fill=group)) + geom_bar(stat="identity", width=1) + coord_polar("y")
+```

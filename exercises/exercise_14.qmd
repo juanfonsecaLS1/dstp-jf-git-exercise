@@ -1,0 +1,7 @@
+## Exercise 14
+This exercise shows a jitter plot using ggplot2.
+
+```{r}
+library(ggplot2)
+ggplot(iris, aes(x=Species, y=Sepal.Length)) + geom_jitter()
+```

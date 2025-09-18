@@ -1,0 +1,7 @@
+## Exercise 3
+This exercise creates a histogram using ggplot2.
+
+```{r}
+library(ggplot2)
+ggplot(mtcars, aes(mpg)) + geom_histogram(bins=10)
+```

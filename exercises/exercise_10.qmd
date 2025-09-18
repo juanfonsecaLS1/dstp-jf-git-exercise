@@ -1,0 +1,8 @@
+## Exercise 10
+This exercise demonstrates a map with colored countries using tmap.
+
+```{r}
+library(tmap)
+data(World)
+tm_shape(World) + tm_polygons("pop_est")
+```

@@ -1,0 +1,7 @@
+## Exercise 4
+This exercise demonstrates a boxplot using ggplot2.
+
+```{r}
+library(ggplot2)
+ggplot(iris, aes(x=Species, y=Sepal.Length)) + geom_boxplot()
+```
