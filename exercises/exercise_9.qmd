@@ -1,6 +1,6 @@
 ## Exercise 9
 This exercise creates a faceted plot using ggplot2.
-
+#cs updates here
 ```{r}
 library(ggplot2)
 ggplot(mpg, aes(displ, hwy)) + geom_point() + facet_wrap(~class)
